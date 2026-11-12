@@ -1,0 +1,15 @@
+package businesslogic;
+
+public class Triangelua {
+    public void marrazketa(Integer altuera, Integer aldea) {
+        for (int n = 0; n < altuera; n++) {
+            for (int e = 0; e < altuera - (n + 1); e++) {
+                IO.print(" ");
+            }
+            for (int m = 0; m <= n; m++) {
+                IO.print("*");
+            }
+            IO.println();
+        }
+    }
+}

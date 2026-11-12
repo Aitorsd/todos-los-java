@@ -1,0 +1,11 @@
+package kontrolagailua;
+
+public class Karratua {
+	public void marraztu(Integer aldea, Integer altuera) {
+			for (Integer n = 0; n < 3; ++n) {
+				for (Integer m = 0; m < 3; ++m)
+					IO.println(n + " x " + m + " = " + n * m);
+				IO.println("---");
+			}
+	}
+}

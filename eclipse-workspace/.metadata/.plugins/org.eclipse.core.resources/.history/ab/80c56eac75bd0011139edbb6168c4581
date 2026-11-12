@@ -1,0 +1,48 @@
+package ariketak;
+
+import java.util.Scanner;
+
+public class ArrayBatuketa {
+
+	private Integer[] zerrenda;
+	private Integer batura;
+	private final Integer muga = 5;
+	private Scanner sc;
+
+	public ArrayBatuketa() {
+		sc = new Scanner(System.in);
+
+		abiarazi();
+		balioakEskatu();
+		kalkulatuBatura();
+		inprimatuEmaitza();
+
+		sc.close();
+	}
+
+	private void abiarazi() {
+		zerrenda = new Integer[muga];
+		batura = 0;
+	}
+
+	private void balioakEskatu() {
+		IO.println("Sartu " + muga + " zenbaki:");
+		for (Integer i = 0; i < zerrenda.length; ++i) {
+			zerrenda[i] = sc.nextInt();
+		}
+	}
+
+	private void kalkulatuBatura() {
+		for (Integer i = 0; i < zerrenda.length; ++i) {
+			batura = batura + zerrenda[i];
+		}
+	}
+
+	private void inprimatuEmaitza() {
+		IO.println("Elementu guztien batura hau da: " + batura);
+	}
+
+	public static void main(String[] args) {
+		new ArrayBatuketa();
+	}
+}

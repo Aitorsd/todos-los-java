@@ -1,0 +1,12 @@
+
+public class Begizta10 {
+	double rand = Math.random();
+	int[] zenb = {(int) rand, (int) rand, };
+	
+	public static void main(String[] args) {
+		for (int i = 0; i < 10; i++) {
+			IO.println(zenb);
+			}
+	}
+
+}

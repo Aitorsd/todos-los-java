@@ -1,0 +1,13 @@
+package businesslogic;
+
+public class Begizta {
+
+	public void egikaritu() {
+		for (Integer n = 0; n < 10; ++n) {
+			for (Integer m = 0; m < 10; ++m)
+				IO.println(n + " x " + m + " = " + n * m);
+			IO.println("---");
+		}
+	}
+
+}

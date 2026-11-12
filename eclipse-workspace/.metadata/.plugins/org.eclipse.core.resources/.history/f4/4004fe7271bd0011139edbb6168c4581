@@ -1,0 +1,24 @@
+package ariketak;
+
+public class ArrayakAlderantzizCorregido {
+	Double[] datuak = {-1.0, Math.PI, 1e10};
+	
+	
+	public ArrayakAlderantzizCorregido() {
+		run();
+	}
+	
+	public void run() {
+		inprimatuAtzekozAurrera();
+	}
+			
+	private void inprimatuAtzekozAurrera() {
+		for(Integer i=datuak.length-1; i>=0; --i)
+			IO.println(datuak[i]);
+	}
+	
+	public static void main(String[] args) {
+		new ArrayakAlderantzizCorregido();
+	}
+
+}

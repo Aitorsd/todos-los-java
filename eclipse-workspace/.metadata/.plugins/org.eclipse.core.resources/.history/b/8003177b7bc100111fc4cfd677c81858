@@ -1,0 +1,15 @@
+package businesslogic;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class eredua {
+
+	void main() {
+		List<String> zerrenda = new ArrayList<String>();
+		zerrenda.add("Andoni");
+		zerrenda.add("Aimar");
+		zerrenda.add("Victor");
+	}
+
+}

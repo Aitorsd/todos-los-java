@@ -1,0 +1,47 @@
+package ariketak;
+
+import java.util.Scanner;
+public class BakoitiaBikoitiaMetodoak {
+
+	private Integer bakoiti;
+	private Integer bikoiti;
+	private Scanner scanner;
+	
+	public BakoitiaBikoitiaMetodoak() {
+		abiarazi();
+		zenbakiakIrakurriEtaProzesatu();
+		inprimatuEmaitza();
+	}
+
+	private void irakurri() {
+		IO.println("Hola");
+	}
+	
+	private void abiarazi() {
+		bakoiti = 0;
+		bikoiti = 0;
+		scanner = new Scanner(System.in);
+	}
+
+	private void zenbakiakIrakurriEtaProzesatu() {
+		IO.println("Idatzi 10 zenbaki");
+		for (Integer i = 1; i <= 10; i++) {
+			Integer zenbakia = scanner.nextInt();
+			if (zenbakia % 2 == 0) {
+				bikoiti++;
+			} else {
+				bakoiti++;
+			}
+		}
+		scanner.close();
+	}
+
+	private void inprimatuEmaitza() {
+		IO.println("Zenbaki bakoitiak: " + bakoiti);
+		IO.println("Zenbaki bikoitiak: " + bikoiti);
+	}
+
+	public static void main(String[] args) {
+		new BakoitiaBikoitiaMetodoak();
+	}
+}

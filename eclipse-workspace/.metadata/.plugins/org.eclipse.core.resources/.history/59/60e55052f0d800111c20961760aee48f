@@ -1,0 +1,8 @@
+
+public class Begizta10 {
+	public static void main(String[] args) {
+		IO.println("Hola");
+
+	}
+
+}

@@ -1,0 +1,35 @@
+package kontrolagailua;
+
+import ikuspegia.Kontsola;
+
+public class Kontrolagailua {
+	
+	public Kontrolagailua() {
+		//begiztaNagusia();
+		//bostMultiploak();
+	}
+	
+	private void marraztuTriangelua() {
+		Triangelua = t = new Triangelua();
+		t.marrazketa(4, 1);
+	}
+	
+	
+	private void begiztaNagusia() {
+		marraztuTriangelua();
+		
+	}
+
+	
+	private void bostMultiploak() {
+		Progresioa p;
+		p = new Progresioa();
+		p.bostMultiploakKalkulatu();
+		
+	}
+
+	public static void main(String[] args) {
+		new Kontrolagailua();
+	}
+}
+

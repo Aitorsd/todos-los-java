@@ -1,0 +1,54 @@
+package ariketak;
+
+import java.util.Scanner;
+
+public class BakoitiaBikoitiaMetodoakCorregido {
+
+	private Integer[] balioak;
+	private final Integer muga = 5;
+	private Scanner sc;
+	private Integer bakoitiKopurua;
+	private Integer bikoitiKopurua;
+
+	public BakoitiaBikoitiaMetodoakCorregido() {
+		sc = new Scanner(System.in);
+
+		abiarazi();
+		balioakEskatu();
+		bilatu();
+		inprimatuEmaitza();
+
+		sc.close();
+	}
+
+	private void abiarazi() {
+		balioak = new Integer[muga];
+		bakoitiKopurua = 0;
+		bikoitiKopurua = 0;
+	}
+
+	private void balioakEskatu() {
+		IO.println("Sartu zerrendaren balioak");
+		for (Integer i = 0; i < balioak.length; ++i) {
+			balioak[i] = sc.nextInt();
+		}
+	}
+
+	private void bilatu() {
+		for (Integer i = 0; i < muga; ++i) {
+			if (balioak[i] % 2 == 0) {
+				bikoitiKopurua++;
+			} else {
+				bakoitiKopurua++;
+			}
+		}
+	}
+
+	private void inprimatuEmaitza() {
+		IO.println("Bikoitiak: " + bikoitiKopurua + "\tBakoitiak: " + bakoitiKopurua);
+	}
+
+	public static void main(String[] args) {
+		new BakoitiaBikoitiaMetodoakCorregido();
+	}
+}

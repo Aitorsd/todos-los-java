@@ -1,0 +1,21 @@
+
+public class Fibonacci {
+	public static void main(String[] args) {
+		int a1 = 0;
+		int a2 = 1;
+		int aN = 0;
+
+		IO.println(a1);
+		IO.println(a2);
+
+		for (int i = 0; i < 8; i++) {
+
+			aN = (a1 + a2);
+			IO.println(aN);
+			a1 = a2;
+			a2 = aN;
+
+		}
+
+	}
+}

@@ -1,0 +1,31 @@
+package kontrolagailua;
+
+import ikuspegia.Kontsola;
+
+public class Kontrolagailua {
+	
+	public Kontrolagailua() {
+		begiztaNagusia();
+		//bostMultiploak();
+	}
+	
+	
+	
+	private void begiztaNagusia() {
+		new Begizta().egikaritu();
+		
+	}
+
+	
+	private void bostMultiploak() {
+		Progresioa p;
+		p = new Progresioa();
+		p.bostMultiploakKalkulatu();
+		
+	}
+
+	public static void main(String[] args) {
+		new Kontrolagailua();
+	}
+}
+

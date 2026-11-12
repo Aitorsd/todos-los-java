@@ -1,0 +1,11 @@
+
+public class BostZenbErreal {
+
+	public static void main(String[] args) {
+		int[] array = {1, 3, 6, 4, 7};
+		
+		double biderkatuta = (0.1 * array);
+		IO.println(biderkatuta);
+	}
+
+}
